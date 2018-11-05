@@ -1,6 +1,6 @@
 {
   "name": "@theludd/eslint-config-gaius",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "main": "index.js",
   "scripts": {
     "pretest": "yarn",

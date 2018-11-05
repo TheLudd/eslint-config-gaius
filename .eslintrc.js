@@ -11,10 +11,10 @@ module.exports = {
     'import',
   ],
   rules: {
-    'arrow-parens': [ 'error', 'always' ],
-    'array-bracket-spacing': [ 'error', 'always' ],
+    'arrow-parens': [ 'warn', 'always' ],
+    'array-bracket-spacing': [ 'warn', 'always' ],
     'import/no-extraneous-dependencies': [
-      'error',
+      'warn',
       {
         'devDependencies': [
           '**/features/**/*.js',
@@ -24,20 +24,26 @@ module.exports = {
       }
     ],
     indent: [
-      'error',
+      'warn',
       2
     ],
     'new-cap': 0,
     'no-underscore-dangle': [
-      'error',
+      'warn',
       { 'allow': [ '_id' ] }
     ],
-    'no-unexpected-multiline': 'error',
+    'no-unexpected-multiline': 'warn',
+    'no-unused-vars': [ 'warn', {
+      'vars': 'all',
+      'args': 'all',
+      'argsIgnorePattern': '^_',
+      'ignoreRestSiblings': false,
+    }],
     semi: [
-      'error',
+      'warn',
       'never'
     ],
-    'space-before-function-paren': [ 'error', 'always' ],
-    'sort-keys': 'error',
+    'space-before-function-paren': [ 'warn', 'always' ],
+    'sort-keys': 'warn',
   }
 }

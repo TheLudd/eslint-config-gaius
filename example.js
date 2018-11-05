@@ -1,6 +1,6 @@
 import { a, b } from './module'
 
-function I () {
+function I (_) {
 
 }
 I((hey) => `hello ${hey}`)
